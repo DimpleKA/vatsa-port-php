@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Vatsal Rishabh || Portfolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Vatsal Rishabh</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#projects">Projects</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#testmonial">Testmonial</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#blog">Blog</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+                <li class="item ml-md-3">
+                    <a href="components.html" class="btn btn-primary">Components</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I am Vatsal Rishabh</span>
+            </h1>
+            <p class="header-subtitle">MERN STACK WEB DEVELOPER</p>
+
+            <button class="btn btn-primary" onclick="openWorksPage()">Visit My Works</button>
+
+<script>
+function openWorksPage() {
+    window.open('mywork.html', '_blank');
+}
+</script>
+
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/man.png" class="about-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>
+                        I am Vatsal Rishabh, a seasoned MERN stack developer specializing in MongoDB, Express.js, React.js, and Node.js.
+                         With a keen eye for detail and a passion for crafting innovative solutions,
+                          I have successfully delivered numerous high-quality projects that exceed client expectations.
+                           My commitment to staying updated with the latest technologies ensures that I remain at the forefront of the industry.
+                            I thrive in collaborative environments, where my problem-solving skills and creativity shine. With a track record of excellence, 
+                            I am a valuable asset to any development team.
+                    </p>
+                    <button id="downloadBtn" class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                    <script>
+                        document.getElementById("downloadBtn").addEventListener("click", function() {
+                            // Create a link element
+                            var link = document.createElement("a");
+                            link.download = "vatsal2024.pdf"; // Specify the filename
+                            link.href = "./vatsal2024.pdf"; // Specify the path to the PDF file
+                            document.body.appendChild(link);
+                            link.click(); // Trigger the click event to initiate download
+                            document.body.removeChild(link); // Clean up
+                        });
+                        </script>
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- service section -->
+    <section class="section" id="service">
+        <div class="container text-center">
+            <p class="section-subtitle">My Skills</p>
+            <h6 class="section-title mb-6">Database/Backend/Frontend/DevOPS</h6>
+            <!-- row -->
+            <div class="row">
+  
+            
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="https://icons.veryicon.com/png/o/miscellaneous/gwidc_1/mongodb.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Mongodb</h6>
+                            <p class="subtitle">MongoDB expert in designing efficient databases for scalable backend solutions in web development.</p>
+                        </div>
+                    </div>
+                </div>
+<!-- service card starts -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="data:image/png;base64,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"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">MySQL</h6>
+                            <p class="subtitle">Proficient in MySQL, designing databases for scalable backend solutions in web development.</p>
+                        </div>
+                    </div>
+                </div>
+<!-- service card ends -->
+<!-- service card starts -->
+<div class="col-md-6 col-lg-3">
+    <div class="service-card">
+        <div class="body">
+            <img src="https://cdn-icons-png.freepik.com/512/5968/5968538.png"
+                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                class="icon">
+            <h6 class="title">PostgreSQL</h6>
+            <p class="subtitle">Skilled in PostgreSQL, designing scalable databases for robust backend solutions in web development.</p>
+        </div>
+    </div>
+</div>
+<!-- service card ends -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/free-firebase-3626998-3029476.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Firebase</h6>
+                            <p class="subtitle">Firebase expert, leveraging its features to build dynamic and scalable web applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card starts -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="https://www.shareicon.net/data/2016/06/19/603784_nodejs_512x512.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Node js</h6>
+                            <p class="subtitle">Node.js specialist, crafting efficient and scalable backend solutions for modern web applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card ends -->
+                 <!-- card starts -->
+                 <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="https://ih1.redbubble.net/image.438908244.6144/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Express js</h6>
+                            <p class="subtitle">Express.js adept, crafting efficient and scalable backend solutions for modern web applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card ends -->
+                <!-- card starts -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="https://static-00.iconduck.com/assets.00/typescript-icon-2048x2048-q2zdnz57.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Typescript</h6>
+                            <p class="subtitle">TypeScript proficient, leveraging its static typing for robust and scalable web development.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card ends -->
+                <!-- card starts -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="data:image/png;base64,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"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">React JS</h6>
+                            <p class="subtitle">React.js proficient, building dynamic and interactive user interfaces for modern web applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card ends -->
+                <!-- card starts -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Next JS</h6>
+                            <p class="subtitle">Next.js proficient, leveraging its features to build performant and SEO-friendly web applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card ends -->
+                 <!-- card starts -->
+                 <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="https://static-00.iconduck.com/assets.00/rust-icon-500x512-ou84984e.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Rust</h6>
+                            <p class="subtitle">Rust adept, crafting efficient and reliable systems and applications with performance in mind.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card ends -->
+                <!-- card starts -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="https://cdn-icons-png.flaticon.com/512/288/288877.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Javascript</h6>
+                            <p class="subtitle">JavaScript expert, developing dynamic and interactive web applications for diverse user experiences.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card ends -->
+                <!-- card starts -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968680.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Bootstrap</h6>
+                            <p class="subtitle">Bootstrap proficient, utilizing its components to create responsive and visually appealing web interfaces.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card ends -->
+                 <!-- card starts -->
+                 <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Github</h6>
+                            <p class="subtitle">Bootstrap proficient, utilizing its components to create responsive and visually appealing web interfaces.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card ends -->
+                 <!-- card starts -->
+                 <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/free-amazon-aws-3445434-2878366.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">AWS</h6>
+                            <p class="subtitle">Bootstrap proficient, utilizing its components to create responsive and visually appealing web interfaces.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card ends -->
+                
+
+
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Projects</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                    <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                    <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                    <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+
+    <!-- pricing section -->
+    <section class="section" id="pricing">
+        <div class="container text-center">
+            <p class="section-subtitle">How I learn the Concepts ?</p>
+            <h6 class="section-title mb-6">My Videos</h6>
+            <!-- row -->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<div class="pricing-wrapper">
+
+<!--video card starts -->
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/scooter.svg"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Javascript</h6>
+                        <div class="pricing-card-list">
+                            <p>Project Codes</p>
+                            <p>Project Videos </p>
+                            <p>Tricks To Learn</p>
+                            <p>Important Topics</p>
+                        </div>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <span></span>
+                        <span>2/Month</span>
+                    </div>
+                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">See Videos</a>
+                </div>
+<!--video card ends -->
+<!--video card starts -->
+<div class="pricing-card">
+    <div class="pricing-card-header">
+        <img class="pricing-card-icon" src="assets/imgs/scooter.svg"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+    </div>
+    <div class="pricing-card-body">
+        <h6 class="pricing-card-title">React JS</h6>
+        <div class="pricing-card-list">
+            <p>Project Codes</p>
+            <p>Project Videos </p>
+            <p>Tricks To Learn</p>
+            <p>Important Topics</p>
+        </div>
+    </div>
+    <div class="pricing-card-footer">
+        <span>1/Month</span>
+    </div>
+    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">See Videos</a>
+</div>
+<!--video card ends -->
+<!--video card starts -->
+<div class="pricing-card">
+    <div class="pricing-card-header">
+        <img class="pricing-card-icon" src="assets/imgs/scooter.svg"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+    </div>
+    <div class="pricing-card-body">
+        <h6 class="pricing-card-title">Next JS</h6>
+        <div class="pricing-card-list">
+            <p>Project Codes</p>
+          <p>Project Videos </p>
+         <p>Tricks To Learn</p>
+         <p>Important Topics</p>
+        </div>
+    </div>
+    <div class="pricing-card-footer">
+        <span>3/Month</span>
+    </div>
+    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">See Videos</a>
+</div>
+<!--video card ends -->
+               
+
+            </div><!-- end of pricing wrapper -->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+        </div> <!-- end of container -->
+    </section><!-- end of pricing section -->
+
+    <!-- section -->
+    <section class="section-sm bg-primary">
+        <!-- container -->
+        <div class="container text-center text-sm-left">
+            <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">Want to work with me?</h6>
+                    <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <button class="btn btn-lg my-font btn-light rounded">Hire Me</button>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of section -->
+
+ 
+
+
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+            <form action="#" class="contact-form col-md-10 col-lg-8 m-auto" id="emailForm">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input id="name" type="text" size="50" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input id="email" type="email" class="form-control" placeholder="Enter Email" required>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea id="message" name="comment" rows="6" class="form-control" placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                    </div>
+                </div>
+            </form>
+            
+            <script>
+                document.getElementById('emailForm').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent default form submission
+            
+                    // Capture form data
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const message = document.getElementById('message').value;
+            
+                    // Construct request body
+                    const requestBody = {
+                        recipientEmail: email,
+                        subject: "New Message from Portfolio",
+                        text: `Hello ${name},\n\nThank you for reaching out. Vatsal Rishabh Pandey will get back to you shortly.\n\nIf not, you can also reach him on WhatsApp: https://api.whatsapp.com/send?phone=+918123573669&text=hello%20vatsal`,
+                        password: "bqjkerupfthvlrlt"
+                    };
+            
+                    // Send POST request to server
+                    fetch('https://tech-zeus-gmail-api.onrender.com/send-email', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(requestBody)
+                    })
+                    .then(response => {
+                        if (response.ok) {
+                            alert("Message sent successfully!");
+                            document.getElementById('emailForm').reset(); // Reset form fields
+                        } else {
+                            throw new Error('Failed to send message');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert("Failed to send message. Please try again later.");
+                    });
+                });
+            </script>
+            <!-- end of contact form -->
+
+         
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; <a
+                    href="http://www.devcrud.com">Vatsal Rishabh</a>  <a
+                    href="https://themewagon.com"></a>
+            </p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-github"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/vatsal.js"></script>
+
+</body>
+
+</html>
