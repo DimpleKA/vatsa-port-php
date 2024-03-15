@@ -1,0 +1,87 @@
+.navbarr{
+    display: flex;
+    height: 60px;
+}
+/* ///////////////////////////////////////////////////////////////////// */
+
+
+/* ///////////////////////////////////////////////////////////////////// */
+iframe{
+    width:"900";
+    height:"500";
+}
+.leftt{
+    width: 30%;
+    display: flex;
+justify-content: space-around;
+align-items: center;
+color: #695aa6;
+font-size: x-large;
+    font-weight: 1000;
+}
+.middlee{
+    width: 30%;
+}
+.rightt{
+width: 40%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+color: #695aa6;
+font-size:medium;
+    font-weight: 1000;
+}
+.main{
+    display: flex;
+    background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+}
+.main-left{
+width: 70%;
+}
+.main-right{
+width: 30%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.content-about-video{
+overflow-y: auto;
+max-height: 500px;
+}
+.content-about-video button {
+    width: 350px;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    margin: 3px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adjust values as needed */
+}
+.code-box{
+    padding: 30px;
+    width: 700px;
+}
+.copy-button{
+    display: flex;
+    justify-content: space-between;
+    background: #2f2f2f;
+    color: #b4b4b4;
+    height: 40px;
+    
+    
+}
+
+.copy-button div{
+    padding: 10px;
+    
+}
+.black-code-area{
+    background: #0d0d0d;
+    color:white;
+}
+pre{
+    background: black;
+}
+.language-html{
+ 
+    color:white;
+}

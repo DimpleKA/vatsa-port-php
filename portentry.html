@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Form</title>
+</head>
+<body>
+    <h1>Add Portfolio Item</h1>
+    <form id="portfolioForm">
+        <label for="url">URL:</label>
+        <input type="text" id="url" name="url" required><br><br>
+        
+        <label for="imageSrc">Image Source:</label>
+        <input type="text" id="imageSrc" name="imageSrc" required><br><br>
+
+        <label for="alt">Alt Text:</label>
+        <input type="text" id="alt" name="alt" required><br><br>
+
+        <label for="heading">Heading:</label>
+        <input type="text" id="heading" name="heading" required><br><br>
+
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="response"></div>
+
+    <script>
+        document.getElementById("portfolioForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    const formData = new FormData(event.target);
+    const formObject = {};
+    formData.forEach((value, key) => formObject[key] = value);
+
+    fetch('http://localhost:3000/portfolio', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formObject)
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("response").innerHTML = JSON.stringify(data);
+        document.getElementById("portfolioForm").reset();
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+
+    </script>
+</body>
+</html>

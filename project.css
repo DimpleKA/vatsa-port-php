@@ -1,0 +1,44 @@
+.navbarr{
+    position: sticky;
+    top: 0;
+}
+a{
+    text-decoration: none;
+    color: #695aa6;
+}
+.project-card {
+    width: 90%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
+}
+
+.project-card-heading{
+    color: #695aa6;
+}
+h2{
+    text-align: center;
+}
+img{
+    height: 210px;
+    width: 310px;
+}
+.project-card-details{
+    display: flex;
+}
+.project-card-details div{
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.project-card-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.project-card-image{
+    width: 70vw;
+    height: 60vh;
+}
+
