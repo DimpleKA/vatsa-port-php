@@ -44,115 +44,66 @@
         <h3><a href="index.html">Go back</a></h3>
     </div>
 
+  <!-- ////////////////////////////////////////////// -->
+  <div id="projects-container" class="project-container">
+    <!-- Project cards will be dynamically added here -->
+</div>
 
-    <div class="project">
-        <div class="project-card">
-            <div class="project-card-heading">
-                <h2>Amazon website</h2>
-            </div>
-            <div class="project-card-imgage">
-                <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/08/Empire-Flippers-an-online-business-marketplace.webp" alt="img">
-            </div>
-            <div class="project-card-details">
-                <div class="project-card-details-github">
-                    <a href="">Github</a>
-                </div>
-                <div class="project-card-details-website">
-                    <a href="">Website</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="project">
-        <div class="project-card">
-            <div class="project-card-heading">
-                <h2>Amazon website</h2>
-            </div>
-            <div class="project-card-imgage">
-                <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/08/Empire-Flippers-an-online-business-marketplace.webp" alt="img">
-            </div>
-            <div class="project-card-details">
-                <div class="project-card-details-github">
-                    <a href="">Github</a>
-                </div>
-                <div class="project-card-details-website">
-                    <a href="">Website</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="project">
-        <div class="project-card">
-            <div class="project-card-heading">
-                <h2>Amazon website</h2>
-            </div>
-            <div class="project-card-imgage">
-                <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/08/Empire-Flippers-an-online-business-marketplace.webp" alt="img">
-            </div>
-            <div class="project-card-details">
-                <div class="project-card-details-github">
-                    <a href="">Github</a>
-                </div>
-                <div class="project-card-details-website">
-                    <a href="">Website</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="project">
-        <div class="project-card">
-            <div class="project-card-heading">
-                <h2>Amazon website</h2>
-            </div>
-            <div class="project-card-imgage">
-                <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/08/Empire-Flippers-an-online-business-marketplace.webp" alt="img">
-            </div>
-            <div class="project-card-details">
-                <div class="project-card-details-github">
-                    <a href="">Github</a>
-                </div>
-                <div class="project-card-details-website">
-                    <a href="">Website</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="project">
-        <div class="project-card">
-            <div class="project-card-heading">
-                <h2>Amazon website</h2>
-            </div>
-            <div class="project-card-imgage">
-                <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/08/Empire-Flippers-an-online-business-marketplace.webp" alt="img">
-            </div>
-            <div class="project-card-details">
-                <div class="project-card-details-github">
-                    <a href="">Github</a>
-                </div>
-                <div class="project-card-details-website">
-                    <a href="">Website</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="project">
-        <div class="project-card">
-            <div class="project-card-heading">
-                <h2>Amazon website</h2>
-            </div>
-            <div class="project-card-imgage" onclick="openNewtab('https://example.com/page1')">
-                <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/08/Empire-Flippers-an-online-business-marketplace.webp" alt="img">
-            </div>
-            <div class="project-card-details">
-                <div class="project-card-details-github">
-                    <a href="">Github</a>
-                </div>
-                <div class="project-card-details-website">
-                    <a href="">Website</a>
-                </div>
-            </div>
-        </div>
-    </div>
+<script>
+    function openNewTab(url) {
+        window.open(url, '_blank');
+    }
+
+    // Fetch projects data from Express backend
+    fetch('http://localhost:3000/projects')
+        .then(response => response.json())
+        .then(projects => {
+            const projectsContainer = document.getElementById('projects-container');
+
+            // Iterate over each project and create HTML elements
+            projects.forEach(project => {
+                const projectCard = document.createElement('div');
+                projectCard.classList.add('project-card');
+
+                const projectHeading = document.createElement('div');
+                projectHeading.classList.add('project-card-heading');
+                const projectName = document.createElement('h2');
+                projectName.textContent = project.name;
+                projectHeading.appendChild(projectName);
+
+                const projectImage = document.createElement('div');
+                projectImage.classList.add('project-card-image');
+                projectImage.onclick = () => openNewTab(project.websiteHref);
+                const projectImg = document.createElement('img');
+                projectImg.src = project.imgSrc;
+                projectImg.alt = 'Project Image';
+                projectImage.appendChild(projectImg);
+
+                const projectDetails = document.createElement('div');
+                projectDetails.classList.add('project-card-details');
+                const githubLink = document.createElement('a');
+                githubLink.href = project.githubHref;
+                githubLink.textContent = 'Github';
+                const websiteLink = document.createElement('a');
+                websiteLink.href = project.websiteHref;
+                websiteLink.textContent = 'Website';
+                projectDetails.appendChild(githubLink);
+                projectDetails.appendChild(websiteLink);
+
+                projectCard.appendChild(projectHeading);
+                projectCard.appendChild(projectImage);
+                projectCard.appendChild(projectDetails);
+
+                projectsContainer.appendChild(projectCard);
+            });
+        })
+        .catch(error => console.error('Error fetching projects:', error));
+</script>
+
+
+  <!-- ///////////////////////////////////////////////////////////// -->
+    
+
     <script src="project.js"></script>
 </body>
 </html>

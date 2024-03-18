@@ -1,6 +1,8 @@
 .navbarr{
     position: sticky;
     top: 0;
+    background: white;
+    height: 50px;
 }
 a{
     text-decoration: none;
@@ -31,14 +33,5 @@ img{
    justify-content: center;
    align-items: center;
 }
-.project-card-image{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-.project-card-image{
-    width: 70vw;
-    height: 60vh;
-}
+
 
